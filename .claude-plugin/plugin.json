@@ -1,0 +1,10 @@
+{
+  "name": "filesquirrelai",
+  "displayName": "FileSquirrelAI",
+  "version": "1.0.0",
+  "description": "Ask Claude what an AI agent changed on your Windows PC: sessions, the files each one touched, recent changes and a file's history, read from FileSquirrelAI's local log. Read-only. Needs the free FileSquirrelAI app (Windows 10/11).",
+  "author": { "name": "DistillAI", "url": "https://filesquirrelai.com" },
+  "homepage": "https://filesquirrelai.com",
+  "license": "MIT",
+  "keywords": ["undo", "file-history", "ai-agents", "windows", "audit"]
+}
