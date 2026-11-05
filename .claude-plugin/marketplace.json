@@ -1,0 +1,12 @@
+{
+  "name": "distillai",
+  "owner": { "name": "DistillAI", "url": "https://filesquirrelai.com" },
+  "metadata": { "description": "DistillAI plugins for Claude: FileSquirrelAI." },
+  "plugins": [
+    {
+      "name": "filesquirrelai",
+      "source": "./",
+      "description": "Ask Claude what an AI agent changed on your Windows PC, from FileSquirrelAI's local log. Read-only."
+    }
+  ]
+}

@@ -26,6 +26,16 @@ The server has four tools, all read-only:
 
 The tools never change, restore or delete files, and they return no file contents. Undo is a click in the FileSquirrelAI app, after you review the list.
 
+## Install
+
+In Claude Code:
+
+```
+/plugin install filesquirrelai --marketplace ruthlessdeveloper/filesquirrelai-claude-plugin
+```
+
+Install the FileSquirrelAI app first (below); the plugin uses the server that comes with it.
+
 ## Requirements
 
 - Windows 10 or 11, 64-bit.
