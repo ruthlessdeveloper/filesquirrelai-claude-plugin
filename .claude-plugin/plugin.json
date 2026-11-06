@@ -8,7 +8,7 @@
   "repository": "https://github.com/ruthlessdeveloper/filesquirrelai-claude-plugin",
   "documentationUrl": "https://filesquirrelai.com/ai-help.html",
   "privacyPolicyUrl": "https://filesquirrelai.com/privacy/",
-  "supportUrl": "mailto:support@filesquirrelai.com",
+  "supportUrl": "https://filesquirrelai.com/#contact",
   "license": "MIT",
   "keywords": ["undo", "file-history", "ai-agents", "windows", "audit"]
 }
