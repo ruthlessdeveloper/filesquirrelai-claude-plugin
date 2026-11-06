@@ -12,8 +12,9 @@ and Claude answers from FileSquirrelAI's log on your PC.
 
 ## What's in it
 
-- **A skill**, `check-agent-changes`, that tells Claude when to use FileSquirrelAI's tools and how to report what it finds.
-- **A local MCP server reference** (`.mcp.json`) that starts `FileSquirrel.Mcp.exe`, the read-only MCP server the FileSquirrelAI installer puts in `C:\Program Files\FileSquirrel\Service`. The server isn't in this repository: it comes with the app, signed by DistillAI.
+A skill, `check-agent-changes`, that tells Claude when to use FileSquirrelAI's tools and how to report what it finds.
+
+The tools themselves come from the FileSquirrelAI app: its read-only MCP server, `FileSquirrel.Mcp.exe`, signed by DistillAI, which you connect to Claude from the app (see **Install**). The plugin doesn't start or configure any server.
 
 The server has four tools, all read-only:
 
@@ -28,25 +29,23 @@ The tools never change, restore or delete files, and they return no file content
 
 ## Install
 
-In Claude Code:
+1. Install the FileSquirrelAI app from https://filesquirrelai.com.
+2. Connect it to Claude: in the app, **File → Settings... → Agents**, under **Connect your agents**, click **Add to Claude Desktop** (Claude Desktop and Cowork) or **Copy Setup** (Claude Code, then run the copied command). Restart Claude.
+3. Add this plugin. In Claude Code:
 
 ```
 /plugin install filesquirrelai --marketplace ruthlessdeveloper/filesquirrelai-claude-plugin
 ```
 
-Install the FileSquirrelAI app first (below); the plugin uses the server that comes with it.
-
 ## Requirements
 
 - Windows 10 or 11, 64-bit.
 - The FileSquirrelAI app, from https://filesquirrelai.com. Everything is free for a 30-day trial; after it the activity log and alerts stay free, and FileSquirrelAI Pro ($19 one-time for version 1.x) keeps new changes undoable.
-- Claude Code, or Cowork running on your PC. Plain claude.ai chat doesn't start local servers, so there the skill loads but the tools don't.
-
-If you already added FileSquirrelAI's server to Claude Code from the app (**File → Settings... → Agents**), Claude Code notices that the plugin starts the same server and uses just one of them.
+- Claude Code, Claude Desktop or Cowork on your PC. Plain claude.ai chat in a browser can't reach programs on your PC, so there the skill loads but the tools don't.
 
 ## Privacy Policy
 
-This plugin and the server it starts run entirely on your PC.
+This plugin, and the FileSquirrelAI server it uses, run entirely on your PC.
 
 - **Data collection:** the plugin collects nothing. The server reads FileSquirrelAI's local log (`C:\ProgramData\FileSquirrel`): file paths, times, the kind of change, and the program and agent that made it. No file contents.
 - **Usage and storage:** results go only to the Claude app that asked, on your PC, as the answer to your question. Claude then handles them like anything else in your conversation, under Anthropic's own privacy terms. Nothing is stored by the plugin.

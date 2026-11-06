@@ -1,8 +1,0 @@
-{
-  "mcpServers": {
-    "filesquirrel": {
-      "command": "C:/Program Files/FileSquirrel/Service/FileSquirrel.Mcp.exe",
-      "args": []
-    }
-  }
-}

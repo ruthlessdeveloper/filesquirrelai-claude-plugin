@@ -1,8 +1,8 @@
 {
   "name": "filesquirrelai",
   "displayName": "FileSquirrelAI",
-  "version": "1.0.0",
-  "description": "Ask Claude what an AI agent changed on your Windows PC: sessions, the files each one touched, recent changes and a file's history, read from FileSquirrelAI's local log. Read-only. Needs the FileSquirrelAI app for Windows 10/11 (30-day free trial).",
+  "version": "1.0.1",
+  "description": "Ask Claude what an AI agent changed on your Windows PC: sessions, the files each one touched, recent changes and a file's history, read from FileSquirrelAI's local log. Read-only. Needs the FileSquirrelAI app for Windows 10/11 (30-day free trial), connected to Claude from its Settings.",
   "author": { "name": "DistillAI", "url": "https://filesquirrelai.com" },
   "homepage": "https://filesquirrelai.com",
   "repository": "https://github.com/ruthlessdeveloper/filesquirrelai-claude-plugin",

@@ -25,4 +25,9 @@ FileSquirrelAI records every change in the folders a person chooses on their Win
 
 ## When the tools aren't there or fail
 
-The tools need the FileSquirrelAI app installed (Windows 10 or 11, 64-bit) at its usual place, `C:\Program Files\FileSquirrel`. If the `filesquirrel` tools are missing or fail to start, say so plainly and suggest installing it from https://filesquirrelai.com (free 30-day trial; the activity log stays free afterwards). If a tool says the log is empty, FileSquirrelAI may not be watching that folder yet: it's chosen in the app under **File → Settings...**.
+The tools come from the FileSquirrelAI app (Windows 10 or 11, 64-bit), not from this plugin. If the `filesquirrel` tools are missing, say so plainly and give the two steps:
+
+1. Install FileSquirrelAI from https://filesquirrelai.com (free 30-day trial; the activity log stays free afterwards).
+2. In the app, open **File → Settings... → Agents** and, under **Connect your agents**, click **Add to Claude Desktop** (for Claude Desktop and Cowork) or **Copy Setup** (for Claude Code, then run the copied command). Restart Claude afterwards.
+
+Don't try to start or configure the server yourself. If a tool says the log is empty, FileSquirrelAI may not be watching that folder yet: it's chosen in the app under **File → Settings...**.
