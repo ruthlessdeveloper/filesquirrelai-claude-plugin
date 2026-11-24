@@ -34,7 +34,8 @@ The tools never change, restore or delete files, and they return no file content
 3. Add this plugin. In Claude Code:
 
 ```
-/plugin install filesquirrelai --marketplace ruthlessdeveloper/filesquirrelai-claude-plugin
+/plugin marketplace add ruthlessdeveloper/filesquirrelai-claude-plugin
+/plugin install filesquirrelai@distillai
 ```
 
 ## Requirements
